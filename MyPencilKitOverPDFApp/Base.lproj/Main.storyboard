@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M2k-L8-Olo">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Document View Controller-->
+        <scene sceneID="dkP-xk-x6W">
+            <objects>
+                <viewController storyboardIdentifier="DocumentViewController" id="M2k-L8-Olo" customClass="DocumentViewController" customModule="MyPencilKitOverPDFApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SIE-Uh-Zny">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jzy-az-Q3G">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAb-IC-g0u">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="fXw-vY-0KF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <state key="normal" title="Open"/>
+                                        <connections>
+                                            <action selector="openSaveTouched" destination="M2k-L8-Olo" eventType="touchUpInside" id="jDS-KP-zIx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Fgl-kE-23I"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tag-vH-fHL" customClass="PDFView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BoZ-jc-2Y8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tag-vH-fHL" firstAttribute="leading" secondItem="BoZ-jc-2Y8" secondAttribute="leading" id="H87-2N-x7W"/>
+                            <constraint firstItem="Tag-vH-fHL" firstAttribute="top" secondItem="Jzy-az-Q3G" secondAttribute="bottom" id="Hbq-L9-l1b"/>
+                            <constraint firstItem="BoZ-jc-2Y8" firstAttribute="bottom" secondItem="Tag-vH-fHL" secondAttribute="bottom" id="PDi-IY-huQ"/>
+                            <constraint firstItem="Jzy-az-Q3G" firstAttribute="leading" secondItem="BoZ-jc-2Y8" secondAttribute="leading" id="PmR-lI-oBq"/>
+                            <constraint firstItem="BoZ-jc-2Y8" firstAttribute="trailing" secondItem="Tag-vH-fHL" secondAttribute="trailing" id="fsu-s7-DW7"/>
+                            <constraint firstItem="BoZ-jc-2Y8" firstAttribute="trailing" secondItem="Jzy-az-Q3G" secondAttribute="trailing" id="mHu-ZF-RVp"/>
+                            <constraint firstItem="Jzy-az-Q3G" firstAttribute="top" secondItem="BoZ-jc-2Y8" secondAttribute="top" id="z6d-Tv-1iF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pdfView" destination="Tag-vH-fHL" id="nif-N0-jD1"/>
+                        <outlet property="saveButton" destination="WAb-IC-g0u" id="Qtd-lK-rtm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rl9-ES-qQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="654"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

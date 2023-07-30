@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DC547C82A752D7100AC1A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC547C72A752D7100AC1A1B /* AppDelegate.swift */; };
+		1DC547CC2A752D7100AC1A1B /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC547CB2A752D7100AC1A1B /* DocumentViewController.swift */; };
+		1DC547CE2A752D7100AC1A1B /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC547CD2A752D7100AC1A1B /* Document.swift */; };
+		1DC547D12A752D7100AC1A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC547CF2A752D7100AC1A1B /* Main.storyboard */; };
+		1DC547D32A752D7300AC1A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DC547D22A752D7300AC1A1B /* Assets.xcassets */; };
+		1DC547D62A752D7300AC1A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC547D42A752D7300AC1A1B /* LaunchScreen.storyboard */; };
+		1DC547DE2A752E2E00AC1A1B /* MyPDFPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC547DD2A752E2E00AC1A1B /* MyPDFPage.swift */; };
+		1DC547E02A752E9300AC1A1B /* MyPDFAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC547DF2A752E9300AC1A1B /* MyPDFAnnotation.swift */; };
+		1DC547E42A7650F000AC1A1B /* MyOverlayCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC547E32A7650F000AC1A1B /* MyOverlayCoordinator.swift */; };
+		1DC547E62A76C8AE00AC1A1B /* MyPDFKitToolPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC547E52A76C8AE00AC1A1B /* MyPDFKitToolPickerModel.swift */; };
+		1DC547E82A7700A900AC1A1B /* lorem.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC547E72A7700A900AC1A1B /* lorem.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DC547C42A752D7100AC1A1B /* MyPencilKitOverPDFApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPencilKitOverPDFApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC547C72A752D7100AC1A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DC547CB2A752D7100AC1A1B /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
+		1DC547CD2A752D7100AC1A1B /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		1DC547D02A752D7100AC1A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1DC547D22A752D7300AC1A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DC547D52A752D7300AC1A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1DC547D72A752D7300AC1A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DC547DD2A752E2E00AC1A1B /* MyPDFPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPDFPage.swift; sourceTree = "<group>"; };
+		1DC547DF2A752E9300AC1A1B /* MyPDFAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPDFAnnotation.swift; sourceTree = "<group>"; };
+		1DC547E32A7650F000AC1A1B /* MyOverlayCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOverlayCoordinator.swift; sourceTree = "<group>"; };
+		1DC547E52A76C8AE00AC1A1B /* MyPDFKitToolPickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPDFKitToolPickerModel.swift; sourceTree = "<group>"; };
+		1DC547E72A7700A900AC1A1B /* lorem.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lorem.pdf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DC547C12A752D7100AC1A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DC547BB2A752D7100AC1A1B = {
+			isa = PBXGroup;
+			children = (
+				1DC547C62A752D7100AC1A1B /* MyPencilKitOverPDFApp */,
+				1DC547C52A752D7100AC1A1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1DC547C52A752D7100AC1A1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DC547C42A752D7100AC1A1B /* MyPencilKitOverPDFApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DC547C62A752D7100AC1A1B /* MyPencilKitOverPDFApp */ = {
+			isa = PBXGroup;
+			children = (
+				1DC547C72A752D7100AC1A1B /* AppDelegate.swift */,
+				1DC547D22A752D7300AC1A1B /* Assets.xcassets */,
+				1DC547CD2A752D7100AC1A1B /* Document.swift */,
+				1DC547CB2A752D7100AC1A1B /* DocumentViewController.swift */,
+				1DC547D72A752D7300AC1A1B /* Info.plist */,
+				1DC547D42A752D7300AC1A1B /* LaunchScreen.storyboard */,
+				1DC547CF2A752D7100AC1A1B /* Main.storyboard */,
+				1DC547E32A7650F000AC1A1B /* MyOverlayCoordinator.swift */,
+				1DC547DF2A752E9300AC1A1B /* MyPDFAnnotation.swift */,
+				1DC547E52A76C8AE00AC1A1B /* MyPDFKitToolPickerModel.swift */,
+				1DC547DD2A752E2E00AC1A1B /* MyPDFPage.swift */,
+				1DC547E72A7700A900AC1A1B /* lorem.pdf */,
+			);
+			path = MyPencilKitOverPDFApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DC547C32A752D7100AC1A1B /* MyPencilKitOverPDFApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DC547DA2A752D7300AC1A1B /* Build configuration list for PBXNativeTarget "MyPencilKitOverPDFApp" */;
+			buildPhases = (
+				1DC547C02A752D7100AC1A1B /* Sources */,
+				1DC547C12A752D7100AC1A1B /* Frameworks */,
+				1DC547C22A752D7100AC1A1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyPencilKitOverPDFApp;
+			productName = MyPencilKitOverPDFApp;
+			productReference = 1DC547C42A752D7100AC1A1B /* MyPencilKitOverPDFApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DC547BC2A752D7100AC1A1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1DC547C32A752D7100AC1A1B = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 1DC547BF2A752D7100AC1A1B /* Build configuration list for PBXProject "MyPencilKitOverPDFApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DC547BB2A752D7100AC1A1B;
+			productRefGroup = 1DC547C52A752D7100AC1A1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DC547C32A752D7100AC1A1B /* MyPencilKitOverPDFApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DC547C22A752D7100AC1A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC547E82A7700A900AC1A1B /* lorem.pdf in Resources */,
+				1DC547D62A752D7300AC1A1B /* LaunchScreen.storyboard in Resources */,
+				1DC547D32A752D7300AC1A1B /* Assets.xcassets in Resources */,
+				1DC547D12A752D7100AC1A1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DC547C02A752D7100AC1A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC547CE2A752D7100AC1A1B /* Document.swift in Sources */,
+				1DC547DE2A752E2E00AC1A1B /* MyPDFPage.swift in Sources */,
+				1DC547CC2A752D7100AC1A1B /* DocumentViewController.swift in Sources */,
+				1DC547E42A7650F000AC1A1B /* MyOverlayCoordinator.swift in Sources */,
+				1DC547E62A76C8AE00AC1A1B /* MyPDFKitToolPickerModel.swift in Sources */,
+				1DC547C82A752D7100AC1A1B /* AppDelegate.swift in Sources */,
+				1DC547E02A752E9300AC1A1B /* MyPDFAnnotation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1DC547CF2A752D7100AC1A1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DC547D02A752D7100AC1A1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1DC547D42A752D7300AC1A1B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DC547D52A752D7300AC1A1B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DC547D82A752D7300AC1A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DC547D92A752D7300AC1A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DC547DB2A752D7300AC1A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TC6DTSZHYG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyPencilKitOverPDFApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FreezySnail.MyPencilKitOverPDFApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DC547DC2A752D7300AC1A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TC6DTSZHYG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyPencilKitOverPDFApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FreezySnail.MyPencilKitOverPDFApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DC547BF2A752D7100AC1A1B /* Build configuration list for PBXProject "MyPencilKitOverPDFApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC547D82A752D7300AC1A1B /* Debug */,
+				1DC547D92A752D7300AC1A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DC547DA2A752D7300AC1A1B /* Build configuration list for PBXNativeTarget "MyPencilKitOverPDFApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC547DB2A752D7300AC1A1B /* Debug */,
+				1DC547DC2A752D7300AC1A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DC547BC2A752D7100AC1A1B /* Project object */;
+}
