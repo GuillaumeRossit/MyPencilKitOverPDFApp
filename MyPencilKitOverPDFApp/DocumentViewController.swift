@@ -111,14 +111,23 @@ class DocumentViewController: UIViewController {
             return
         }
         // Setup canvas for MyPDFPage
-        if page.canvasView == nil {
-            page.canvasView = self.overlayCoordinator.pageToViewMapping[page]
-        }
+        self.setupCanvasView(at: page)
+        
         guard let pageCanvasView = page.canvasView else {
             return
         }
         MyPDFKitToolPickerModel.shared.toolPicker.setVisible(true, forFirstResponder: pageCanvasView)
         pageCanvasView.becomeFirstResponder()
+    }
+    
+    private func setupCanvasView(at page: MyPDFPage) {
+        if page.canvasView == nil,
+           let storedCanvas = self.overlayCoordinator.pageToViewMapping[page] {
+            page.canvasView = storedCanvas
+        } else {
+            // create canvasView
+            page.canvasView = self.overlayCoordinator.overlayView(for: page)
+        }
     }
 }
 

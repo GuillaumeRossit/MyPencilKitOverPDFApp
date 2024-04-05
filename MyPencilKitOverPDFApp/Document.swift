@@ -57,20 +57,37 @@ class Document: UIDocument {
                         
                         let userDefinedAnnotationProperties = [MyPDFAnnotation.pdfPageMediaBoxHeightKey:NSNumber(value: mediaBoxHeight)]
 
-                        // Create an annotation of our custom subclass
+//                   So, as this :
+//                        
+//                        // Create an annotation of our custom subclass
+//                        let newAnnotation = MyPDFAnnotation(bounds: mediaBoxBounds,
+//                                                            forType: .stamp,
+//                                                            withProperties: userDefinedAnnotationProperties)
+//                        
+//                        
+//
+//
+//                        // Add our custom data
+//                        do {
+//                            let codedData = try NSKeyedArchiver.archivedData(withRootObject: drawing,
+//                                                                             requiringSecureCoding: true)
+//                            newAnnotation.setValue(codedData,
+//                                                   forAnnotationKey: PDFAnnotationKey(rawValue: MyPDFAnnotation.drawingDataKey))
+//                        } catch {
+//                            print("\(error.localizedDescription)")
+//                        }
+//                        
+//                  Generates this :
+//                        
+//                         -[PDFAnnotation setValue:forAnnotationKey:] failed. Turn on logging to learn more: set environment variable "PDFKIT_LOG_ANNOTATIONS" to any value.
+//
+//                  I then try to save the PencilKit drawing as base64 string in a .ink annotation's contents as :
+                        
                         let newAnnotation = MyPDFAnnotation(bounds: mediaBoxBounds,
-                                                            forType: .stamp,
+                                                            forType: .ink,
                                                             withProperties: userDefinedAnnotationProperties)
                         
-                        // Add our custom data
-                        do {
-                            let codedData = try NSKeyedArchiver.archivedData(withRootObject: drawing,
-                                                                             requiringSecureCoding: true)
-                            newAnnotation.setValue(codedData,
-                                                   forAnnotationKey: PDFAnnotationKey(rawValue: MyPDFAnnotation.drawingDataKey))
-                        } catch {
-                            print("\(error.localizedDescription)")
-                        }
+                        newAnnotation.contents = drawing.dataRepresentation().base64EncodedString()
 
                         // Add our annotation to the page
                         page.addAnnotation(newAnnotation)
@@ -79,15 +96,16 @@ class Document: UIDocument {
             }
         
             // -- Option #1: Save the document to a data representation
-//            if let resultData = pdfDocument.dataRepresentation() {
-//                return resultData
-//            }
-            
-            // -- Option #2: Save the document to a data representation and "burn in" annotations
-            let options = [PDFDocumentWriteOption.burnInAnnotationsOption: true]
-            if let resultData = pdfDocument.dataRepresentation(options: options) {
+            if let resultData = pdfDocument.dataRepresentation() {
                 return resultData
             }
+            
+            // -- Option #2: Save the document to a data representation and "burn in" annotations
+//            let options = [PDFDocumentWriteOption.burnInAnnotationsOption: true]
+//            if let resultData = pdfDocument.dataRepresentation(options: options) {
+//                return resultData
+//            }
+
         }
         
         // Fall through to returning empty data
